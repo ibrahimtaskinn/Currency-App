@@ -10,4 +10,5 @@
 - Binding
 - Spinner
 
-![CurrencyApp](https://github.com/itaskinn/CurrencyApp/assets/101405883/93acf27b-599e-4e3b-a7d0-9d897e1d0eaa)
+
+![CurrencyApp](https://github.com/itaskinn/CurrencyApp/assets/101405883/308753a5-0e81-42a0-8b78-d1c7004956ae)
