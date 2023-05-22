@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Title"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/Exchange_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Exchange_rate_btn_text"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="@color/btn_bg_color"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/Forex_buying"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/border_background"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Exchange_rate" />
+
+    <TextView
+        android:id="@+id/Forex_selling"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/border_background"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Forex_buying"
+        app:layout_constraintTop_toBottomOf="@+id/Exchange_rate" />
+
+    <TextView
+        android:id="@+id/Banknote_buying"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/border_background"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Forex_buying" />
+
+    <TextView
+        android:id="@+id/Banknote_selling"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/border_background"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Banknote_buying"
+        app:layout_constraintTop_toBottomOf="@+id/Forex_selling" />
+
+    <TextView
+        android:id="@+id/Forex_buying_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/forex_buying_txt"
+        app:layout_constraintBottom_toTopOf="@+id/Forex_buying"
+        app:layout_constraintStart_toStartOf="@+id/Forex_buying" />
+
+    <TextView
+        android:id="@+id/Forex_selling_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Forex_selling_txt"
+        app:layout_constraintBottom_toTopOf="@+id/Forex_selling"
+        app:layout_constraintStart_toStartOf="@+id/Forex_selling" />
+
+    <TextView
+        android:id="@+id/Banknote_buying_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Banknote_buying_txt"
+        app:layout_constraintBottom_toTopOf="@+id/Banknote_buying"
+        app:layout_constraintStart_toStartOf="@+id/Banknote_buying" />
+
+    <TextView
+        android:id="@+id/Banknote_selling_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Banknote_selling_txt"
+        app:layout_constraintBottom_toTopOf="@+id/Banknote_selling"
+        app:layout_constraintStart_toStartOf="@+id/Banknote_selling" />
+
+    <ImageView
+        android:id="@+id/down_icon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/down_icon"
+        app:layout_constraintEnd_toEndOf="@+id/Exchange_rate"
+        app:layout_constraintTop_toTopOf="@+id/Exchange_rate" />
+
+    <TextView
+        android:id="@+id/choose_name"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="50dp"
+        android:hint="@string/selected_currency"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/border_background_small"
+        app:layout_constraintBottom_toTopOf="@+id/Forex_buying"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="64dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="50dp"
+        android:hint="@string/unit"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@drawable/border_background_small"
+        app:layout_constraintBottom_toTopOf="@+id/Forex_selling"
+        app:layout_constraintStart_toEndOf="@+id/choose_name" />
+
+    <TextView
+        android:id="@+id/choose_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:text="@string/choose_name_txt"
+        app:layout_constraintBottom_toTopOf="@+id/choose_name"
+        app:layout_constraintStart_toStartOf="@+id/choose_name" />
+
+    <TextView
+        android:id="@+id/unit_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/unit_txt"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/unit"
+        app:layout_constraintStart_toStartOf="@+id/unit" />
+
+    <Spinner
+        android:id="@+id/currency_spinner"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:background="@color/btn_bg_color"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/Exchange_rate"
+        app:layout_constraintTop_toBottomOf="@+id/Exchange_rate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

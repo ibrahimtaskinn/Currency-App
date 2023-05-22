@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CurrencyApp</string>
+    <string name="Title">Türkiye Cumhuriyeti Merkez Bankası Döviz Kurları</string>
+    <string name="Exchange_rate_btn_text">Döviz Kuru Seç</string>
+    <string name="forex_buying_txt">Döviz Alış</string>
+    <string name="Forex_selling_txt">Döviz Satış</string>
+    <string name="Banknote_buying_txt">Efektif Alış</string>
+    <string name="Banknote_selling_txt">Efektif Satış</string>
+    <string name="Date">Date</string>
+    <string name="selected_currency">Selected currency</string>
+    <string name="unit">Unit</string>
+    <string name="choose_name_txt">Seçilen Para Birimi Adı</string>
+    <string name="unit_txt">Birim</string>
+</resources>
